@@ -1,4 +1,4 @@
-.topo{
+@media all and (orientation: landscape) .topo{
     height: 100px;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -41,7 +41,7 @@
     height: 530px;
 }
 
-.logo img{
+@media all and (orientation: landscape) .logo img{
     width: 400px;
     border-radius: 25px;
     align-content: center;
@@ -50,7 +50,7 @@
     margin-right: 100px;
 }
 
-.começo{
+@media all and (orientation: landscape) .começo{
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 20px;
@@ -110,7 +110,7 @@ footer ul, li{
     justify-content: center;
 }
 
-.gastronomia div{
+@media all and (orientation: landscape) .gastronomia div{
     margin-bottom: 40px;
     width: 100%;
     max-width: 600px;
