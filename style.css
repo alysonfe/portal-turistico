@@ -1,0 +1,311 @@
+.topo{
+    height: 100px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav {
+    position: relative;
+    z-index: 1000;
+}
+.logotipo{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: left;
+    margin-left: 30px;
+}
+.menu{
+    display: flex;
+    margin-left: 320px ;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+.menu a{
+    display: block;
+    text-align: center;
+    margin-right: 70px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;  
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee; 
+}
+.menu a:link {
+    color: black;
+}
+.menu a:visited {
+    color: black;
+}
+.menu a:hover{
+    color: #18B9AC;
+}
+.menu a:active {
+    color: #18B9AC;
+}
+/* ÍCONE HAMBÚRGUER */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* ESCONDER CHECKBOX */
+#menu-toggle {
+    display: none;
+}
+.main{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image: url(img/praia2.webp);
+    background-repeat: no-repeat; 
+    background-size: cover;        
+    background-position: center;    
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100vh;
+}
+.main::before {
+    z-index: 0;
+}
+.começo{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;  
+    flex-direction: column;
+    width: 400px;
+    font-size: 20px;
+    margin-right: 200px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+.Paintro{
+    opacity: 1 ;
+    color: black;   
+    font-size: 15px;
+    line-height: 1.5;
+}
+.footer{
+    /*background-color: #E6F2F6;;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;*/
+    background: linear-gradient(135deg, #0f4c5c, #18B9AC);
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.divfoo {
+    min-width: 200px;
+}  
+footer h5{
+    /*justify-content: left;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;*/
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.footer ul {
+    padding: 0;
+}
+.footer li {
+    list-style: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+.footer li:hover {
+    opacity: 1;
+}
+/*footer ul, li{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    list-style: none;
+    margin-right: 50px;
+}
+.divfoo:hover{
+    background-color: #00A5A0;
+    border-radius: 15px;
+}*/
+.gastronomia{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+.gastronomia div{
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 600px;
+}
+.gastronomia h2{
+    background-color: #E6F2F6;
+    padding: 10px;
+    width: 100%;
+}
+.gastronomia img{
+    width: 100%;
+    height: 300px;
+    margin-top: 5px;    
+    border-radius: 8px;
+}
+.video-container iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+.gastronomia p{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #E6F2F6;
+}
+aside{
+    background-color: #E6F2F6;
+    margin: 40px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+.container {
+    background-color: aliceblue;
+    height: 70vh;
+    padding: 20px;
+    border-radius: 10px;
+}
+.titulo {
+    margin-bottom: 10px;
+}
+.label {
+    display: block;
+    margin-top: 10px;
+}
+.campo {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+textarea.campo {
+    height: 100px;
+}
+.submit {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: #7effd0;
+}
+
+
+/*------- RESPONSIVO --------*/
+
+
+@media (max-width: 768px) {
+
+
+.topo {
+    flex-direction: column;
+    align-items: center;
+  }
+.logotipo {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+.menu {
+    margin-left: 0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 300px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1001;
+}
+.menu-icon {
+    display: block;
+    margin-bottom: 10px;
+  }
+.menu a {
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    margin: 0;
+  }
+/* QUANDO CLICA NO MENU*/
+#menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+.main {
+    justify-content: center;
+    height: 500px;
+    padding: 40px 20px;
+  }
+.começo {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 16px;
+  }
+.Paintro {
+    font-size: 14px;
+  }
+  /*.footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .divfoo {
+    margin-bottom: 20px;
+  }
+  footer h5 {
+    margin-left: 0;
+  }
+  footer ul, li {
+    margin-right: 0;
+    align-items: center;
+  }*/
+.footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.divfoo {
+    width: 100%;
+}
+/* GASTRONOMIA */
+.gastronomia {
+    margin: 20px;
+  }
+.gastronomia img,
+.video-container iframe {
+    height: auto;
+  }
+  /* FORMULÁRIO */
+.container {
+    height: auto;
+  }
+}
