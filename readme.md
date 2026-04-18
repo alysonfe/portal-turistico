@@ -8,4 +8,4 @@ Descrição: esse projeto é um site de teor turistico que apresenta os destinos
 
 ingressantes: Alyson Rodrigues e Vinicius Brambilla
 
-link:https://alysonfe.github.io/portal-turistico/
+link: https://alysonfe.github.io/portal-turistico/
